@@ -79,7 +79,7 @@ rag:
   json_validation: true
   noise_severity_std: 2.0      # used only in oracle mode to simulate extraction noise
   noise_probability_std: 0.05
-  llm_model: "gpt-4.1-mini"
+  llm_model: "gpt-4o-mini"
   # Name of the env var holding the key (NOT the key itself). Export it before running:
   #   export OPENAI_API_KEY="sk-..."
   openai_api_key_env: "OPENAI_API_KEY"

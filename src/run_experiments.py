@@ -22,8 +22,14 @@ from .data_loader import load_instances
 from .rag_extractor import build_extractor
 
 
-def run(config_path: str, scenarios: List[str], smoke: bool) -> None:
+def _configure_logging() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
+    for noisy_logger in ("httpx", "httpcore", "openai"):
+        logging.getLogger(noisy_logger).setLevel(logging.WARNING)
+
+
+def run(config_path: str, scenarios: List[str], smoke: bool) -> None:
+    _configure_logging()
     with open(config_path) as f:
         cfg = yaml.safe_load(f)
 
