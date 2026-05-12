@@ -1,0 +1,95 @@
+experiment:
+  seed: 42
+  n_instances: 30
+  customer_sizes: [100, 200]
+  events_per_instance: 100
+  scenarios: ["static", "continuous", "aet_rag"]
+  output_dir: "outputs"
+
+dataset:
+  # Multi-source dataset suite (4 families). Each entry is loaded by
+  # src/data_loader.py and tagged with `instance.source`. Set `enabled: false`
+  # to skip a source without removing it.
+  sources:
+    - name: "svrpbench"
+      enabled: true
+      hf_repo: "MBZUAI/svrp-bench"
+      hf_split: "test"
+      subsets:                          # filter to single-depot 100/200 variants
+        - "cvrp_100_single_depot_multi_vehicule_capacities"
+        - "cvrp_200_single_depot_multi_vehicule_capacities"
+      n_instances: 15
+      cache_dir: "data/svrpbench"
+
+    - name: "solomon"
+      enabled: true
+      url: "https://www.sintef.no/globalassets/project/top/vrptw/solomon/solomon-100.zip"
+      families: ["R1", "R2", "RC1", "RC2"]   # heterogeneous TW + geometry mix
+      n_instances: 10
+      cache_dir: "data/solomon"
+      # Inject stochasticity on top of the deterministic Solomon edge weights,
+      # following Serrano et al. 2024 (mean-preserving log-normal) + Poisson
+      # incidents aligned with SVRPBench's accident process.
+      stochastic_overlay:
+        lognormal_sigma: 0.20
+        poisson_severe_fraction: 0.10
+        severe_minutes: [30, 120]
+
+    - name: "euro_neurips_2022"
+      enabled: true
+      git_repo: "https://github.com/ortec/euro-neurips-vrp-2022-quickstart.git"
+      instances_dir: "instances"
+      n_instances: 5                    # smaller subset (200-1000 customers each)
+      max_customers: 500                # cap to keep solver tractable
+      cache_dir: "data/euro_neurips_2022"
+
+    - name: "synthetic"
+      enabled: true
+      n_instances: 10
+      customer_sizes: [100, 200]
+      cache_dir: "data/synthetic"
+
+  # Legacy single-source fallback (read only if `sources` above is missing).
+  source: "synthetic"
+  hf_repo: "MBZUAI/svrp-bench"
+  hf_split: "test"
+  cache_dir: "data/svrpbench"
+
+aet:
+  theta_0: 0.70
+  theta_min: 0.25
+  gamma: 0.015
+  weights:
+    urgency: 0.50
+    spatial: 0.25
+    slack: 0.25
+  d_max_minutes: 60.0
+  epsilon: 1.0
+
+solver:
+  time_limit_seconds: 30
+  first_solution_strategy: "PATH_CHEAPEST_ARC"
+  local_search_metaheuristic: "GUIDED_LOCAL_SEARCH"
+  lambda_lateness: 2.0
+  lambda_unserved: 100.0
+
+rag:
+  mode: "llm"               # "oracle" | "llm"
+  vector_store: "chromadb"
+  json_validation: true
+  noise_severity_std: 2.0      # used only in oracle mode to simulate extraction noise
+  noise_probability_std: 0.05
+  llm_model: "gpt-4o-mini"
+  # Name of the env var holding the key (NOT the key itself). Export it before running:
+  #   export OPENAI_API_KEY="sk-..."
+  openai_api_key_env: "OPENAI_API_KEY"
+  # Optional alternative: paste the key directly here (less secure, keep out of git).
+  # openai_api_key: "sk-..."
+
+events:
+  mild_minutes: [1, 5]
+  medium_minutes: [5, 20]
+  severe_minutes: [20, 90]
+  severe_fraction: 0.10
+  medium_fraction: 0.30
+  mild_fraction: 0.60

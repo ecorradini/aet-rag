@@ -1,0 +1,11 @@
+event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
+sol_r101_e0000,16.412225776261113,edge,"(90, 54)",1.4901589917271296,0.2317459620798905,mild,"slight delay at the crosswalk, nothing serious"
+sol_r101_e0001,45.43908360780944,edge,"(69, 23)",0.5871243081071966,0.5386415662386532,mild,"minor congestion, moving slowly but flowing"
+sol_r101_e0002,61.38033410040199,edge,"(79, 33)",1.4201644015299733,0.1760328201440739,mild,stuck behind a garbage truck for a minute or two
+sol_r101_e0003,108.3684747825676,edge,"(64, 51)",2.327949100884571,0.5032132651595194,mild,stuck behind a garbage truck for a minute or two
+sol_r101_e0004,122.58110761041884,edge,"(47, 61)",2.34448919044957,0.2818495907149587,mild,"slight delay at the crosswalk, nothing serious"
+sol_r101_e0005,125.53714581450973,edge,"(81, 59)",2.853668658342971,0.7330772776653813,mild,"slow traffic at the junction, about 3 minutes late"
+sol_r101_e0006,150.50811654305352,edge,"(45, 5)",2.537513392080731,0.5561992534954259,mild,"minor congestion, moving slowly but flowing"
+sol_r101_e0007,173.15856811960114,edge,"(99, 46)",1.585825415839171,0.7933457578186552,mild,"slow traffic at the junction, about 2 minutes late"
+sol_r101_e0008,197.5702880910998,edge,"(50, 48)",1.0099405977284968,0.5991927421324973,mild,"slow traffic at the junction, about 1 minutes late"
+sol_r101_e0009,226.79986527603404,edge,"(75, 82)",52.85184898698037,1.0,severe,"huge protest on Main Street, traffic at a standstill for 53 minutes"

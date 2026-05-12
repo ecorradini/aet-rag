@@ -1,0 +1,11 @@
+event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
+syn_n50_000_e0000,7.46542077315878,edge,"(0, 33)",15.243042753428675,0.6398495889656768,medium,"school zone congestion, queues forming"
+syn_n50_000_e0001,85.80513264684006,edge,"(26, 8)",5.191781281572468,0.9767732466206891,medium,double-parked van blocking half the lane
+syn_n50_000_e0002,108.50300665394407,edge,"(34, 10)",3.834032196886469,0.22326326378146766,mild,stuck behind a garbage truck for a minute or two
+syn_n50_000_e0003,234.46880623727122,edge,"(13, 36)",1.7372204775344267,0.5559618224055973,mild,stuck behind a garbage truck for a minute or two
+syn_n50_000_e0004,239.1094296104448,edge,"(4, 35)",4.274055554911641,0.3960845764181377,mild,"slight delay at the crosswalk, nothing serious"
+syn_n50_000_e0005,314.02367695126486,edge,"(3, 24)",11.228978914930687,0.9028727821317238,medium,"heavier than usual traffic on this stretch, expect ~11 min delay"
+syn_n50_000_e0006,316.2192052139812,edge,"(6, 34)",4.981628060295625,0.3826851989427941,mild,"minor congestion, moving slowly but flowing"
+syn_n50_000_e0007,414.82569259237033,edge,"(8, 25)",20.868821292317556,0.6398561009510951,severe,"major accident, police closed all lanes"
+syn_n50_000_e0008,428.6841807975766,edge,"(42, 45)",5.818486992342749,0.9387257902323105,medium,"heavier than usual traffic on this stretch, expect ~6 min delay"
+syn_n50_000_e0009,452.21527561091597,edge,"(26, 6)",3.4559631219057363,0.9485270635281178,mild,"minor congestion, moving slowly but flowing"

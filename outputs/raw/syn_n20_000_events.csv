@@ -1,0 +1,6 @@
+event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
+syn_n20_000_e0000,35.36346321431026,edge,"(4, 7)",12.27813770794231,0.49520986441941295,medium,"school zone congestion, queues forming"
+syn_n20_000_e0001,168.88047295720813,edge,"(8, 5)",1.255617806145882,0.2643828421692798,mild,"minor congestion, moving slowly but flowing"
+syn_n20_000_e0002,217.22938096386483,edge,"(3, 0)",1.913950204782314,0.3562313607361189,mild,stuck behind a garbage truck for a minute or two
+syn_n20_000_e0003,233.1846652748309,edge,"(18, 10)",1.7963473674408592,0.10059535008930527,mild,stuck behind a garbage truck for a minute or two
+syn_n20_000_e0004,362.91569714157407,edge,"(7, 8)",11.174432947229203,0.3444766564195155,medium,"school zone congestion, queues forming"

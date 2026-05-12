@@ -1,0 +1,83 @@
+# Smoke-test config: 2 instances per source, single seed, short event stream.
+# Use to validate the end-to-end pipeline before the full run.
+#   python -m src.run_experiments --config config_smoke.yaml
+experiment:
+  seed: 42
+  n_instances: 2
+  customer_sizes: [50]
+  events_per_instance: 10
+  scenarios: ["static", "continuous", "aet_rag"]
+  output_dir: "outputs_smoke"
+
+dataset:
+  sources:
+    - name: "svrpbench"
+      enabled: true
+      hf_repo: "MBZUAI/svrp-bench"
+      hf_split: "test"
+      subsets: ["cvrp_50_single_depot_multi_vehicule_capacities"]
+      n_instances: 2
+      cache_dir: "data/svrpbench"
+
+    - name: "solomon"
+      enabled: true
+      url: "https://www.sintef.no/globalassets/project/top/vrptw/solomon/solomon-100.zip"
+      families: ["R1"]
+      n_instances: 2
+      cache_dir: "data/solomon"
+      stochastic_overlay:
+        lognormal_sigma: 0.20
+        poisson_severe_fraction: 0.10
+        severe_minutes: [30, 120]
+
+    - name: "euro_neurips_2022"
+      enabled: true
+      git_repo: "https://github.com/ortec/euro-neurips-vrp-2022-quickstart.git"
+      instances_dir: "instances"
+      n_instances: 2
+      max_customers: 250
+      cache_dir: "data/euro_neurips_2022"
+
+    - name: "synthetic"
+      enabled: true
+      n_instances: 2
+      customer_sizes: [50]
+      cache_dir: "data/synthetic"
+
+  source: "synthetic"
+  cache_dir: "data/svrpbench"
+
+aet:
+  theta_0: 0.70
+  theta_min: 0.25
+  gamma: 0.015
+  weights:
+    urgency: 0.50
+    spatial: 0.25
+    slack: 0.25
+  d_max_minutes: 60.0
+  epsilon: 1.0
+
+solver:
+  time_limit_seconds: 5
+  first_solution_strategy: "PATH_CHEAPEST_ARC"
+  local_search_metaheuristic: "GUIDED_LOCAL_SEARCH"
+  lambda_lateness: 2.0
+  lambda_unserved: 100.0
+
+rag:
+  mode: "oracle"
+  vector_store: "chromadb"
+  json_validation: true
+  noise_severity_std: 2.0
+  noise_probability_std: 0.05
+  llm_model: "gpt-4o-mini"
+  openai_api_key_env: "OPENAI_API_KEY"
+
+events:
+  mild_minutes: [1, 5]
+  medium_minutes: [5, 20]
+  severe_minutes: [20, 90]
+  severe_fraction: 0.10
+  medium_fraction: 0.30
+  mild_fraction: 0.60

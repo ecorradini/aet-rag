@@ -1,0 +1,4 @@
+scenario,instance_id,seed,solver_calls,total_travel,total_lateness,unserved,served_ratio,objective,runtime_total_seconds,route_nervousness,feasible
+static,syn_n20_000,0,1,1149.0,0.0,0,1.0,1263.0,4.999525792023633,0.0,True
+continuous,syn_n20_000,0,6,1149.0,0.0,0,1.0,1263.0,30.002445084042847,0.0,True
+aet_rag,syn_n20_000,42,1,1149.0,0.0,0,1.0,1263.0,5.000563625013456,0.0,True

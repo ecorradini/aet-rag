@@ -1,0 +1,11 @@
+event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
+svrp_000_e0000,102.75480486006957,edge,"(90, 54)",9.28100922743807,0.36159346600840614,medium,"school zone congestion, queues forming"
+svrp_000_e0001,284.4881756315026,edge,"(69, 23)",0.9305457424266395,0.544365256810644,mild,"minor congestion, moving slowly but flowing"
+svrp_000_e0002,384.294265672082,edge,"(79, 33)",6.990884436728931,0.2688781540640565,medium,"construction work narrowing the lanes, slow but moving"
+svrp_000_e0003,678.4808855952059,edge,"(64, 51)",6.938852232275483,0.5800616506827012,medium,"construction work narrowing the lanes, slow but moving"
+svrp_000_e0004,767.4643259087093,edge,"(47, 61)",12.86513760999599,0.45719373104073235,medium,"school zone congestion, queues forming"
+svrp_000_e0005,785.9716955343218,edge,"(81, 59)",7.966110095814612,0.8182846349565753,medium,"heavier than usual traffic on this stretch, expect ~8 min delay"
+svrp_000_e0006,942.311686182596,edge,"(45, 5)",8.572179309708252,0.6567770187892179,medium,double-parked van blocking half the lane
+svrp_000_e0007,1084.1232090966332,edge,"(99, 46)",3.62146443951916,0.8272730748799884,mild,"slow traffic at the junction, about 4 minutes late"
+svrp_000_e0008,1236.9618037007988,edge,"(50, 48)",2.8645100617601704,0.6301022331996919,mild,"slow traffic at the junction, about 3 minutes late"
+svrp_000_e0009,1419.9643739021262,edge,"(75, 82)",52.85184898698037,1.0,severe,"huge protest on Main Street, traffic at a standstill for 53 minutes"

@@ -1,0 +1,11 @@
+event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
+svrp_001_e0000,80.78694304498745,edge,"(82, 52)",98.16443487403863,1.0,severe,"fire trucks blocking the whole intersection, no way through"
+svrp_001_e0001,182.22817508343164,edge,"(74, 18)",3.541309147472769,0.7778259783129636,mild,"minor congestion, moving slowly but flowing"
+svrp_001_e0002,294.368100443387,edge,"(76, 66)",1.650464306047052,0.5350835483571886,mild,stuck behind a garbage truck for a minute or two
+svrp_001_e0003,381.2040570236244,edge,"(38, 67)",8.90605360805039,0.7289872044421344,medium,"construction work narrowing the lanes, slow but moving"
+svrp_001_e0004,668.6483674299765,edge,"(91, 46)",5.060890827319957,0.49736831627053746,medium,"school zone congestion, queues forming"
+svrp_001_e0005,693.1500076896654,edge,"(76, 60)",8.990092202912916,0.37610401342678257,medium,"heavier than usual traffic on this stretch, expect ~9 min delay"
+svrp_001_e0006,714.7184371899507,edge,"(43, 40)",4.536360224058308,0.5297246241705091,mild,"minor congestion, moving slowly but flowing"
+svrp_001_e0007,1265.496280546462,edge,"(94, 96)",4.492315726504501,0.49920923461641964,mild,"slow traffic at the junction, about 4 minutes late"
+svrp_001_e0008,1294.5567239573486,edge,"(87, 90)",6.433783473179691,0.8207977329962731,medium,"heavier than usual traffic on this stretch, expect ~6 min delay"
+svrp_001_e0009,1384.9991884335836,edge,"(13, 82)",3.636476307230156,0.668229788461294,mild,"minor congestion, moving slowly but flowing"

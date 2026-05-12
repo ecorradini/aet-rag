@@ -1,0 +1,11 @@
+event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0000,49.16531982540829,edge,"(226, 134)",38.93770591773295,0.7069099788844384,severe,"fire trucks blocking the whole intersection, no way through"
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0001,136.11968959035087,edge,"(172, 57)",2.2378158100598093,0.5661530912711967,mild,"minor congestion, moving slowly but flowing"
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0002,183.87413128337812,edge,"(196, 84)",28.19642034514296,0.6223037525376237,severe,"road completely blocked by a landslide, rerouting required"
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0003,324.6342570660395,edge,"(161, 127)",24.490743424997504,0.8725931705614015,severe,"road completely blocked by a landslide, rerouting required"
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0004,367.21036149381996,edge,"(119, 153)",52.91310024872929,0.7427747708741326,severe,"fire trucks blocking the whole intersection, no way through"
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0005,376.0656237660748,edge,"(203, 148)",27.427159977510346,1.0,severe,"major accident, police closed all lanes"
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0006,450.86996651375597,edge,"(112, 14)",31.543774364379193,1.0,severe,"huge protest on Main Street, traffic at a standstill for 32 minutes"
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0007,518.722841019153,edge,"(246, 115)",11.370340014034225,0.9564210011219061,medium,"heavier than usual traffic on this stretch, expect ~11 min delay"
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0008,591.8518630207294,edge,"(124, 120)",9.924125177163697,0.747762485123084,medium,"heavier than usual traffic on this stretch, expect ~10 min delay"
+enrips_ORTEC-VRPTW-ASYM-00c5356f-d1-n258-k12_e0009,679.4135094573368,edge,"(186, 203)",52.85184898698037,1.0,severe,"huge protest on Main Street, traffic at a standstill for 53 minutes"

@@ -1,0 +1,11 @@
+event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
+syn_n50_001_e0000,9.22741868924593,edge,"(11, 5)",0.37305976773988897,0.2051768970893074,mild,"slight delay at the crosswalk, nothing serious"
+syn_n50_001_e0001,20.988573683231646,edge,"(26, 46)",0.6157061497437231,0.25249086318645997,mild,"minor congestion, moving slowly but flowing"
+syn_n50_001_e0002,31.597646588236437,edge,"(24, 1)",9.636972973843521,0.3567654260446159,medium,"construction work narrowing the lanes, slow but moving"
+syn_n50_001_e0003,165.14690981457503,edge,"(50, 30)",4.254939867028313,0.7572901406424603,mild,stuck behind a garbage truck for a minute or two
+syn_n50_001_e0004,195.9495621794832,edge,"(42, 46)",4.522738063928611,0.7555148928792692,mild,"slight delay at the crosswalk, nothing serious"
+syn_n50_001_e0005,200.97966177537475,edge,"(21, 35)",1.4192200934508479,0.5766382712363745,mild,"slow traffic at the junction, about 1 minutes late"
+syn_n50_001_e0006,205.6769705997971,edge,"(48, 18)",36.51832850593333,1.0,severe,"huge protest on Main Street, traffic at a standstill for 37 minutes"
+syn_n50_001_e0007,280.68070359951935,edge,"(42, 23)",2.7248343180438392,0.7155588586534025,mild,"slow traffic at the junction, about 3 minutes late"
+syn_n50_001_e0008,384.59823647351703,edge,"(28, 38)",58.357692446272054,1.0,severe,"major accident, police closed all lanes"
+syn_n50_001_e0009,403.668465311873,edge,"(30, 9)",17.572681072199856,0.5132746983461252,medium,double-parked van blocking half the lane

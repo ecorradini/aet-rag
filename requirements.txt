@@ -1,0 +1,19 @@
+ortools>=9.8
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+networkx>=3.0
+matplotlib>=3.7
+seaborn>=0.12
+pyyaml>=6.0
+pydantic>=2.0
+tqdm>=4.65
+datasets>=2.14
+huggingface_hub>=0.20
+requests>=2.31
+vrplib>=1.3
+# Optional (only needed for LLM/RAG mode)
+chromadb>=0.4
+langchain>=0.1
+langchain-openai>=0.0.5
+openai>=1.0
