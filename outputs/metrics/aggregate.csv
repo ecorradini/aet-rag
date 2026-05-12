@@ -1,6 +1,0 @@
-,seed,seed,seed,seed,solver_calls,solver_calls,solver_calls,solver_calls,total_travel,total_travel,total_travel,total_travel,total_lateness,total_lateness,total_lateness,total_lateness,unserved,unserved,unserved,unserved,served_ratio,served_ratio,served_ratio,served_ratio,objective,objective,objective,objective,runtime_total_seconds,runtime_total_seconds,runtime_total_seconds,runtime_total_seconds,route_nervousness,route_nervousness,route_nervousness,route_nervousness,feasible,feasible,feasible,feasible
-,mean,std,min,max,mean,std,min,max,mean,std,min,max,mean,std,min,max,mean,std,min,max,mean,std,min,max,mean,std,min,max,mean,std,min,max,mean,std,min,max,mean,std,min,max
-scenario,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-aet_rag,42.0,,42,42,1.0,,1,1,1149.0,,1149.0,1149.0,0.0,,0.0,0.0,0.0,,0,0,1.0,,1.0,1.0,1263.0,,1263.0,1263.0,5.000563625013456,,5.000563625013456,5.000563625013456,0.0,,0.0,0.0,1.0,,True,True
-continuous,0.0,,0,0,6.0,,6,6,1149.0,,1149.0,1149.0,0.0,,0.0,0.0,0.0,,0,0,1.0,,1.0,1.0,1263.0,,1263.0,1263.0,30.002445084042847,,30.002445084042847,30.002445084042847,0.0,,0.0,0.0,1.0,,True,True
-static,0.0,,0,0,1.0,,1,1,1149.0,,1149.0,1149.0,0.0,,0.0,0.0,0.0,,0,0,1.0,,1.0,1.0,1263.0,,1263.0,1263.0,4.999525792023633,,4.999525792023633,4.999525792023633,0.0,,0.0,0.0,1.0,,True,True
