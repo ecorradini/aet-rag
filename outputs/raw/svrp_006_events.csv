@@ -1,0 +1,101 @@
+event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
+svrp_006_e0000,15.759116156609174,edge,"(54, 40)",6.899617170805341,0.5453341870747144,medium,"school zone congestion, queues forming"
+svrp_006_e0001,15.823088566592602,edge,"(14, 32)",16.106577763163266,0.6425776267892074,medium,double-parked van blocking half the lane
+svrp_006_e0002,47.16017967413869,edge,"(71, 86)",14.052225822454691,0.9065091453336247,medium,"construction work narrowing the lanes, slow but moving"
+svrp_006_e0003,53.18563850639366,edge,"(51, 37)",4.228267505668566,0.4287010139514143,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0004,53.831991954182854,edge,"(45, 34)",2.67421045355991,0.22794073571035361,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0005,70.12622824951043,edge,"(71, 48)",5.876659584034061,0.9226067274168533,medium,"heavier than usual traffic on this stretch, expect ~6 min delay"
+svrp_006_e0006,71.30002263577705,edge,"(54, 69)",62.752691826190414,1.0,severe,"huge protest on Main Street, traffic at a standstill for 63 minutes"
+svrp_006_e0007,85.69152102472574,edge,"(28, 25)",4.0923378674279185,0.478403606215286,mild,"slow traffic at the junction, about 4 minutes late"
+svrp_006_e0008,86.6003926742278,edge,"(27, 55)",8.634530388907892,0.6556468183790674,medium,"heavier than usual traffic on this stretch, expect ~9 min delay"
+svrp_006_e0009,88.33358805628465,edge,"(69, 28)",4.1850485630343695,0.31552722412979206,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0010,92.45747220305972,edge,"(28, 81)",2.3126003830061332,0.6959903961709136,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0011,98.10715533624989,edge,"(58, 40)",9.744256999066353,0.6136467148182149,medium,double-parked van blocking half the lane
+svrp_006_e0012,99.91448808660957,edge,"(25, 9)",4.356072719939547,0.20948287917675973,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0013,134.12882702701717,edge,"(47, 39)",3.198768505571844,0.5996624411735427,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0014,137.57207917302532,edge,"(80, 29)",7.182181477249388,0.27698524793396184,medium,"school zone congestion, queues forming"
+svrp_006_e0015,145.45685633696476,edge,"(25, 99)",2.7431400540584376,0.5162447151931324,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0016,166.18760921327925,edge,"(72, 87)",8.786360434854368,0.5594383337515589,medium,"heavier than usual traffic on this stretch, expect ~9 min delay"
+svrp_006_e0017,168.77358558690432,edge,"(73, 71)",101.37075402299729,0.897916043588252,severe,"fire trucks blocking the whole intersection, no way through"
+svrp_006_e0018,179.1281053578911,edge,"(67, 97)",2.573965465824899,0.46650480700210745,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0019,179.57311053496662,edge,"(34, 86)",9.94998623103162,0.569612252276891,medium,double-parked van blocking half the lane
+svrp_006_e0020,193.70725371982215,edge,"(44, 24)",4.4249227162605465,0.8362073615197867,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0021,211.13792942873292,edge,"(55, 13)",4.18156519820158,0.3367250133960454,mild,"slow traffic at the junction, about 4 minutes late"
+svrp_006_e0022,215.7304222883651,edge,"(94, 93)",4.899854576285406,1.0,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0023,216.17768584637554,edge,"(22, 76)",2.9810537342595627,0.6330533058181,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0024,239.18803568640206,edge,"(39, 48)",5.7937453281128715,0.524157730732471,medium,double-parked van blocking half the lane
+svrp_006_e0025,245.18961224303735,edge,"(32, 40)",10.508580705581995,0.8845926367191228,medium,"construction work narrowing the lanes, slow but moving"
+svrp_006_e0026,248.9554175655906,edge,"(28, 57)",3.8716172013669814,0.6978825683983855,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0027,266.8616490060922,edge,"(66, 50)",107.75424695771443,0.9563687797074487,severe,"huge protest on Main Street, traffic at a standstill for 108 minutes"
+svrp_006_e0028,296.0051515851953,edge,"(17, 86)",10.279288340655079,0.6400196592210862,medium,"construction work narrowing the lanes, slow but moving"
+svrp_006_e0029,307.2109003309562,edge,"(98, 30)",6.488285132202629,0.6048825859186899,medium,"construction work narrowing the lanes, slow but moving"
+svrp_006_e0030,339.6022320776603,edge,"(48, 98)",4.111121318358586,0.3072072713349004,mild,"slow traffic at the junction, about 4 minutes late"
+svrp_006_e0031,348.7253681668622,edge,"(42, 5)",9.660853268700784,0.35446616250839186,medium,"heavier than usual traffic on this stretch, expect ~10 min delay"
+svrp_006_e0032,348.78722385086155,edge,"(46, 39)",5.248813015462728,0.7508868541106214,medium,double-parked van blocking half the lane
+svrp_006_e0033,393.63859382577664,edge,"(83, 15)",10.919813627422801,0.8701034659746927,medium,"school zone congestion, queues forming"
+svrp_006_e0034,416.7081258822938,edge,"(21, 89)",3.267078258727582,0.5405980159537066,mild,"slow traffic at the junction, about 3 minutes late"
+svrp_006_e0035,429.69403589403333,edge,"(85, 15)",3.2031203922891813,0.41636319335494953,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0036,436.67738969865917,edge,"(51, 49)",8.16032622605369,0.5742881494510137,medium,"school zone congestion, queues forming"
+svrp_006_e0037,460.1227690270516,edge,"(98, 79)",3.3526217810721164,0.6024526510375176,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0038,461.62473694739566,edge,"(14, 98)",5.589522530819902,0.459100302877093,medium,double-parked van blocking half the lane
+svrp_006_e0039,485.329880961125,edge,"(71, 24)",6.717164352178198,0.3705759002988708,medium,"heavier than usual traffic on this stretch, expect ~7 min delay"
+svrp_006_e0040,515.1220707640377,edge,"(53, 91)",15.430126243478618,0.33617272716389524,medium,"school zone congestion, queues forming"
+svrp_006_e0041,518.981173468164,edge,"(89, 70)",2.6005930539120454,0.6094180807498157,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0042,539.1830460542233,edge,"(79, 84)",108.50533930291618,0.7585684236206769,severe,"road completely blocked by a landslide, rerouting required"
+svrp_006_e0043,567.1321212811177,edge,"(64, 99)",1.3853802786225327,0.9129376854135662,mild,"slow traffic at the junction, about 1 minutes late"
+svrp_006_e0044,570.0367466644592,edge,"(54, 41)",4.190645406739656,0.5120416903795059,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0045,587.6256484683042,edge,"(7, 97)",59.99905947631307,1.0,severe,"road completely blocked by a landslide, rerouting required"
+svrp_006_e0046,589.5082723937071,edge,"(82, 58)",7.644477427056527,0.4503098688289109,medium,"school zone congestion, queues forming"
+svrp_006_e0047,597.4889084590457,edge,"(67, 21)",39.2011978476217,0.9013527679084936,severe,"huge protest on Main Street, traffic at a standstill for 39 minutes"
+svrp_006_e0048,607.9125582116591,edge,"(29, 54)",10.874404951057548,1.0,medium,"school zone congestion, queues forming"
+svrp_006_e0049,616.8523297037015,edge,"(95, 93)",75.31964552046868,1.0,severe,"fire trucks blocking the whole intersection, no way through"
+svrp_006_e0050,655.804291987475,edge,"(80, 100)",2.0425165646437238,0.9045280908378577,mild,"slow traffic at the junction, about 2 minutes late"
+svrp_006_e0051,668.1005457638632,edge,"(16, 48)",1.758467959686382,0.8143863361028526,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0052,750.0680045442198,edge,"(43, 38)",66.67596742503625,0.972129251996763,severe,"road completely blocked by a landslide, rerouting required"
+svrp_006_e0053,766.5645811050177,edge,"(37, 100)",10.844473700405882,0.7441797686508249,medium,"construction work narrowing the lanes, slow but moving"
+svrp_006_e0054,788.5147982958321,edge,"(47, 6)",7.4421433008165065,1.0,medium,"heavier than usual traffic on this stretch, expect ~7 min delay"
+svrp_006_e0055,798.0234038829224,edge,"(4, 26)",4.278106141719476,0.20241704087963597,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0056,799.8727639544261,edge,"(53, 87)",1.6864509026773382,0.24968911291656884,mild,"slow traffic at the junction, about 2 minutes late"
+svrp_006_e0057,828.8007040015086,edge,"(98, 54)",4.106713939275584,0.683919947733528,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0058,834.5053066368628,edge,"(84, 79)",4.570907792154568,0.6743896034690545,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0059,845.819336821429,edge,"(30, 42)",10.51670410619294,0.3613174567078644,medium,"school zone congestion, queues forming"
+svrp_006_e0060,859.9868516822457,edge,"(91, 53)",3.469452301510767,0.4157362458386909,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0061,864.4694486061571,edge,"(41, 56)",3.5911088438871404,0.6083035676370643,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0062,864.508670706541,edge,"(71, 72)",8.246220756836081,0.16452740500100346,medium,"school zone congestion, queues forming"
+svrp_006_e0063,888.9161247070884,edge,"(45, 36)",2.468678489679399,0.48049302378223185,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0064,900.7238256174218,edge,"(2, 82)",2.958074584538813,0.7565571897499173,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0065,908.6413431613115,edge,"(8, 36)",1.7115806125327306,0.8247574867342382,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0066,933.3352473944639,edge,"(71, 39)",9.167197754776176,0.42622032896441575,medium,"construction work narrowing the lanes, slow but moving"
+svrp_006_e0067,956.0780268212573,edge,"(36, 30)",9.33257892411722,1.0,medium,"heavier than usual traffic on this stretch, expect ~9 min delay"
+svrp_006_e0068,966.6942297202546,edge,"(54, 100)",3.7542386741772287,0.7433878349661519,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0069,992.3756768683028,edge,"(9, 87)",7.907412700356854,0.6253263630435091,medium,"school zone congestion, queues forming"
+svrp_006_e0070,1026.6116203171182,edge,"(30, 84)",2.7032570179389452,0.40008581361460804,mild,"slow traffic at the junction, about 3 minutes late"
+svrp_006_e0071,1030.7033050791829,edge,"(28, 29)",3.7297352514546334,0.4267832871940117,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0072,1078.984359827669,edge,"(2, 3)",8.04285767708927,0.940699135224607,medium,"heavier than usual traffic on this stretch, expect ~8 min delay"
+svrp_006_e0073,1094.449874867925,edge,"(49, 61)",48.283778348806834,0.8888832598063172,severe,"huge protest on Main Street, traffic at a standstill for 48 minutes"
+svrp_006_e0074,1101.679254657419,edge,"(84, 54)",75.44394682059817,0.9580880857284328,severe,"road completely blocked by a landslide, rerouting required"
+svrp_006_e0075,1129.4158678416297,edge,"(89, 0)",3.931789251487176,0.8243260329337815,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0076,1130.309668762219,edge,"(71, 31)",2.208006527787497,0.8453944200112664,mild,"slow traffic at the junction, about 2 minutes late"
+svrp_006_e0077,1131.7117599959374,edge,"(38, 56)",14.542008184114701,0.35799060419855083,medium,double-parked van blocking half the lane
+svrp_006_e0078,1134.1748600073283,edge,"(81, 38)",2.9991010846109294,0.169258762391837,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0079,1134.505867498251,edge,"(85, 7)",3.5901118694387195,0.20421574764199446,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0080,1138.785028184494,edge,"(66, 82)",2.5940324869193425,0.8346880079706179,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0081,1143.9264114195955,edge,"(48, 33)",8.844986580363955,0.40678765656946825,medium,"heavier than usual traffic on this stretch, expect ~9 min delay"
+svrp_006_e0082,1157.6904717451673,edge,"(50, 33)",8.57658669358441,0.6967654422876253,medium,"school zone congestion, queues forming"
+svrp_006_e0083,1189.9117560020352,edge,"(55, 68)",3.5117439980717844,0.5021598212881513,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0084,1195.561696249775,edge,"(89, 42)",3.546465564532352,0.22156655854736934,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0085,1210.82614592534,edge,"(10, 41)",11.402891095238209,0.6540874923620601,medium,"heavier than usual traffic on this stretch, expect ~11 min delay"
+svrp_006_e0086,1216.2794066637057,edge,"(90, 48)",2.841384838282639,0.5676091445272727,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0087,1230.8164438915012,edge,"(64, 66)",4.994337613455128,0.7459516629012045,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0088,1235.4845450092378,edge,"(85, 74)",7.106588669723156,0.2701036511936291,medium,"school zone congestion, queues forming"
+svrp_006_e0089,1244.8514526707893,edge,"(64, 20)",7.481532357826969,0.8072030125678112,medium,"construction work narrowing the lanes, slow but moving"
+svrp_006_e0090,1283.7604706657337,edge,"(41, 44)",6.588870045432286,0.4968785817193463,medium,"school zone congestion, queues forming"
+svrp_006_e0091,1319.5729894540264,edge,"(44, 4)",100.11369341867827,0.8525044295754922,severe,"fire trucks blocking the whole intersection, no way through"
+svrp_006_e0092,1325.9011639326297,edge,"(0, 33)",4.636962002310294,0.8996466163706026,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0093,1354.7365361940472,edge,"(21, 98)",2.3514357610426364,0.48679629885801173,mild,"slight delay at the crosswalk, nothing serious"
+svrp_006_e0094,1377.612337232809,edge,"(95, 92)",2.4650259013863094,0.7988985149090532,mild,stuck behind a garbage truck for a minute or two
+svrp_006_e0095,1381.7676403702505,edge,"(16, 14)",1.303285197144437,0.22933006953251844,mild,"slow traffic at the junction, about 1 minutes late"
+svrp_006_e0096,1408.8570566912038,edge,"(16, 41)",8.076099438969816,0.8495449208733491,medium,double-parked van blocking half the lane
+svrp_006_e0097,1425.2430739946128,edge,"(99, 10)",3.3999064106521777,0.7126754222973978,mild,"minor congestion, moving slowly but flowing"
+svrp_006_e0098,1430.9522460782969,edge,"(41, 42)",7.212924924103259,0.8400823206138636,medium,"heavier than usual traffic on this stretch, expect ~7 min delay"
+svrp_006_e0099,1438.325572937891,edge,"(24, 37)",4.984376833942841,0.7610496760564236,mild,"slight delay at the crosswalk, nothing serious"
