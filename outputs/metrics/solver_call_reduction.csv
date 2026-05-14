@@ -1,5 +1,5 @@
 dataset_source,scenario,solver_calls_mean,continuous_baseline,reduction_vs_continuous
-euro_neurips_2022,aet_rag,30.2,101.0,0.700990099009901
+euro_neurips_2022,aet_rag,34.4,101.0,0.6594059405940593
 euro_neurips_2022,continuous,101.0,101.0,0.0
 euro_neurips_2022,static,1.0,101.0,0.9900990099009901
 solomon,aet_rag,9.4,101.0,0.9069306930693068
