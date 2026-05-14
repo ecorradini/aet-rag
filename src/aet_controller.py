@@ -22,6 +22,12 @@ class AETConfig:
     w_slack: float = 0.25
     d_max: float = 60.0
     epsilon: float = 1.0
+    # Safety-net guards: trigger re-optimization whenever a single component
+    # alone signals a near-certain feasibility loss, even if the convex
+    # combination D_t still sits below the adaptive threshold. Set to a value
+    # > 1.0 to disable a guard.
+    safety_urgency: float = 0.85
+    safety_slack: float = 0.95
 
 
 @dataclass
@@ -114,6 +120,12 @@ class AETController:
         theta = self.threshold(z.timestamp)
         trig = D >= theta
         reason = "D>=theta" if trig else "D<theta"
+        if not trig and U >= self.cfg.safety_urgency:
+            trig = True
+            reason = "safety_U"
+        if not trig and R >= self.cfg.safety_slack:
+            trig = True
+            reason = "safety_R"
         log = TriggerLog(
             event_id=z.event_id,
             timestamp=z.timestamp,

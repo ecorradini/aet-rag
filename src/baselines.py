@@ -116,6 +116,8 @@ def run_aet_rag(instance, events, extractor, cfg, seed: int) -> ScenarioOutput:
         w_slack=cfg["aet"]["weights"]["slack"],
         d_max=cfg["aet"]["d_max_minutes"],
         epsilon=cfg["aet"]["epsilon"],
+        safety_urgency=float(cfg["aet"].get("safety_urgency", 0.85)),
+        safety_slack=float(cfg["aet"].get("safety_slack", 0.95)),
     )
     ctrl = AETController(aet_cfg)
     travel = instance.travel_time.copy()
@@ -153,6 +155,7 @@ def run_aet_rag(instance, events, extractor, cfg, seed: int) -> ScenarioOutput:
             "U": log.U, "S": log.S, "R": log.R,
             "D": log.D, "theta": log.theta,
             "trigger": log.trigger, "solver_called": solver_called,
+            "reason": log.reason,
             "severity_minutes": z.severity_minutes,
             "delay_probability": z.delay_probability,
         })

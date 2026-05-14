@@ -1,0 +1,13 @@
+dataset_source,scenario,solver_calls_mean,continuous_baseline,reduction_vs_continuous
+euro_neurips_2022,aet_rag,30.2,101.0,0.700990099009901
+euro_neurips_2022,continuous,101.0,101.0,0.0
+euro_neurips_2022,static,1.0,101.0,0.9900990099009901
+solomon,aet_rag,9.4,101.0,0.9069306930693068
+solomon,continuous,101.0,101.0,0.0
+solomon,static,1.0,101.0,0.9900990099009901
+svrpbench,aet_rag,14.0,101.0,0.8613861386138614
+svrpbench,continuous,101.0,101.0,0.0
+svrpbench,static,1.0,101.0,0.9900990099009901
+synthetic,aet_rag,7.8,76.0,0.8973684210526316
+synthetic,continuous,76.0,76.0,0.0
+synthetic,static,1.0,76.0,0.9868421052631579

@@ -65,6 +65,12 @@ aet:
     slack: 0.25
   d_max_minutes: 60.0
   epsilon: 1.0
+  # Safety-net thresholds. Force a re-optimization when a single component
+  # (urgency U or slack risk R) crosses an unsafe level, even if the convex
+  # disruption score D is still under the adaptive threshold. Set above 1.0
+  # to disable a guard.
+  safety_urgency: 0.85
+  safety_slack: 0.95
 
 solver:
   time_limit_seconds: 30

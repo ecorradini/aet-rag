@@ -28,7 +28,8 @@ def _configure_logging() -> None:
         logging.getLogger(noisy_logger).setLevel(logging.WARNING)
 
 
-def run(config_path: str, scenarios: List[str], smoke: bool) -> None:
+def run(config_path: str, scenarios: List[str], smoke: bool,
+        dataset_filter: List[str] | None = None) -> None:
     _configure_logging()
     with open(config_path) as f:
         cfg = yaml.safe_load(f)
@@ -51,6 +52,11 @@ def run(config_path: str, scenarios: List[str], smoke: bool) -> None:
     metrics_dir.mkdir(parents=True, exist_ok=True)
 
     instances = load_instances(cfg)
+    if dataset_filter:
+        keep = set(dataset_filter)
+        instances = [i for i in instances if getattr(i, "source", "unknown") in keep]
+        if not instances:
+            raise SystemExit(f"No instances matched --dataset filter {dataset_filter}")
     seed = cfg["experiment"]["seed"]
     summaries = []
 
@@ -82,8 +88,19 @@ def run(config_path: str, scenarios: List[str], smoke: bool) -> None:
             )
         summaries.append(metrics.summarize(outs, dataset_source=getattr(inst, "source", "unknown")))
 
-    summary = pd.concat(summaries, ignore_index=True)
-    summary.to_csv(metrics_dir / "summary.csv", index=False)
+    new_summary = pd.concat(summaries, ignore_index=True)
+
+    summary_path = metrics_dir / "summary.csv"
+    if (dataset_filter or scenarios != ["static", "continuous", "aet_rag"]) and summary_path.exists():
+        prev = pd.read_csv(summary_path)
+        # Drop the (dataset, scenario) rows we just recomputed, keep the rest.
+        touched_ds = set(new_summary["dataset_source"].unique())
+        touched_sc = set(new_summary["scenario"].unique())
+        mask_drop = prev["dataset_source"].isin(touched_ds) & prev["scenario"].isin(touched_sc)
+        summary = pd.concat([prev[~mask_drop], new_summary], ignore_index=True)
+    else:
+        summary = new_summary
+    summary.to_csv(summary_path, index=False)
     agg = metrics.aggregate(summary)
     agg.to_csv(metrics_dir / "aggregate.csv")
     reduction = metrics.solver_call_reduction(summary)
@@ -103,12 +120,17 @@ def main() -> None:
                         help="comma-separated: static,continuous,aet_rag or 'all'")
     parser.add_argument("--smoke", action="store_true",
                         help="tiny run for sanity checking the pipeline")
+    parser.add_argument("--dataset", default="",
+                        help="comma-separated list of dataset sources to run; "
+                             "empty = all. Use to rerun a subset and merge into "
+                             "the existing metrics CSVs.")
     args = parser.parse_args()
     if args.scenario == "all":
         scenarios = ["static", "continuous", "aet_rag"]
     else:
         scenarios = [s.strip() for s in args.scenario.split(",") if s.strip()]
-    run(args.config, scenarios, args.smoke)
+    ds_filter = [s.strip() for s in args.dataset.split(",") if s.strip()] or None
+    run(args.config, scenarios, args.smoke, dataset_filter=ds_filter)
 
 
 if __name__ == "__main__":
