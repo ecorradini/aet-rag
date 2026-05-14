@@ -71,6 +71,15 @@ aet:
   # to disable a guard.
   safety_urgency: 0.85
   safety_slack: 0.95
+  # Confidence-aware gating: scale D by c_t and admit the single-component
+  # safety override only when c_t >= confidence_min_safety. Mirrors a real
+  # deployment where low-confidence LLM hallucinations must not over-trigger.
+  confidence_scaling: true
+  confidence_min_safety: 0.60
+
+baselines:
+  # How often the time-triggered "periodic" baseline invokes OR-Tools.
+  periodic_every_n: 10
 
 solver:
   time_limit_seconds: 30
@@ -91,6 +100,10 @@ rag:
   openai_api_key_env: "OPENAI_API_KEY"
   # Optional alternative: paste the key directly here (less secure, keep out of git).
   # openai_api_key: "sk-..."
+  # Persistent JSONL cache of (event_id -> extracted tuple). If present every
+  # cached event_id is served from disk instead of the API. Defaults to
+  # `<output_dir>/rag_cache.jsonl` when left unset.
+  cache_path: "outputs/rag_cache.jsonl"
 
 events:
   mild_minutes: [1, 5]

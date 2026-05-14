@@ -118,6 +118,8 @@ def run_aet_rag(instance, events, extractor, cfg, seed: int) -> ScenarioOutput:
         epsilon=cfg["aet"]["epsilon"],
         safety_urgency=float(cfg["aet"].get("safety_urgency", 0.85)),
         safety_slack=float(cfg["aet"].get("safety_slack", 0.95)),
+        confidence_min_safety=float(cfg["aet"].get("confidence_min_safety", 0.60)),
+        confidence_scaling=bool(cfg["aet"].get("confidence_scaling", True)),
     )
     ctrl = AETController(aet_cfg)
     travel = instance.travel_time.copy()
@@ -154,6 +156,7 @@ def run_aet_rag(instance, events, extractor, cfg, seed: int) -> ScenarioOutput:
             "event_id": ev.event_id, "timestamp": z.timestamp,
             "U": log.U, "S": log.S, "R": log.R,
             "D": log.D, "theta": log.theta,
+            "confidence": log.confidence,
             "trigger": log.trigger, "solver_called": solver_called,
             "reason": log.reason,
             "severity_minutes": z.severity_minutes,
@@ -161,3 +164,93 @@ def run_aet_rag(instance, events, extractor, cfg, seed: int) -> ScenarioOutput:
         })
     df = pd.DataFrame(rows)
     return ScenarioOutput("aet_rag", instance.instance_id, seed, calls, res, df, runtime_total)
+
+
+# ---------------------------------------------------------------------------
+# Lightweight baselines (no LLM extraction needed)
+# ---------------------------------------------------------------------------
+import re  # noqa: E402
+
+# Heuristic vocabulary for keyword-triggered re-optimization. Words are
+# intentionally broad (English + a few common synonyms) and match the
+# severe-incident lexicon used by SVRPBench-style event generators.
+_KEYWORD_PATTERN = re.compile(
+    r"\b(accident|crash|collision|closed|closure|"
+    r"blocked|blockade|police|impassable|severe|major|"
+    r"emergency|breakdown|flood|fire|explosion)\b",
+    re.IGNORECASE,
+)
+
+
+def run_keyword(instance, events, cfg) -> ScenarioOutput:
+    """Keyword-trigger baseline. Re-optimizes whenever the raw textual event
+    matches a small severe-incident lexicon. No LLM, no semantic scoring."""
+    travel = instance.travel_time.copy()
+    res = solve(
+        instance, travel,
+        time_limit_seconds=cfg["solver"]["time_limit_seconds"],
+        first_solution=cfg["solver"]["first_solution_strategy"],
+        metaheuristic=cfg["solver"]["local_search_metaheuristic"],
+    )
+    runtime_total = res.runtime_seconds
+    rows = []
+    calls = 1
+    for ev in events:
+        trig = bool(_KEYWORD_PATTERN.search(getattr(ev, "message", "") or ""))
+        solver_called = False
+        if trig:
+            # Use the ground-truth severity to perturb travel, mirroring how
+            # the LLM-based scenarios consume the parsed delay.
+            sev = float(getattr(ev, "true_delay", 0.0))
+            aff = tuple(getattr(ev, "affected_id", (0, 0)))
+            travel = _apply_event_to_travel(travel, aff, sev)
+            res = solve(
+                instance, travel,
+                time_limit_seconds=cfg["solver"]["time_limit_seconds"],
+                first_solution=cfg["solver"]["first_solution_strategy"],
+                metaheuristic=cfg["solver"]["local_search_metaheuristic"],
+            )
+            calls += 1
+            runtime_total += res.runtime_seconds
+            solver_called = True
+        rows.append({"event_id": ev.event_id, "trigger": trig,
+                     "solver_called": solver_called})
+    log = pd.DataFrame(rows)
+    return ScenarioOutput("keyword", instance.instance_id, 0, calls, res, log, runtime_total)
+
+
+def run_periodic(instance, events, cfg) -> ScenarioOutput:
+    """Fixed-period baseline. Re-optimizes every `periodic_every_n` events,
+    independent of textual content. Represents a naive time-triggered policy."""
+    every = int(cfg.get("baselines", {}).get("periodic_every_n", 10))
+    every = max(1, every)
+    travel = instance.travel_time.copy()
+    res = solve(
+        instance, travel,
+        time_limit_seconds=cfg["solver"]["time_limit_seconds"],
+        first_solution=cfg["solver"]["first_solution_strategy"],
+        metaheuristic=cfg["solver"]["local_search_metaheuristic"],
+    )
+    runtime_total = res.runtime_seconds
+    rows = []
+    calls = 1
+    for idx, ev in enumerate(events):
+        trig = ((idx + 1) % every == 0)
+        solver_called = False
+        if trig:
+            sev = float(getattr(ev, "true_delay", 0.0))
+            aff = tuple(getattr(ev, "affected_id", (0, 0)))
+            travel = _apply_event_to_travel(travel, aff, sev)
+            res = solve(
+                instance, travel,
+                time_limit_seconds=cfg["solver"]["time_limit_seconds"],
+                first_solution=cfg["solver"]["first_solution_strategy"],
+                metaheuristic=cfg["solver"]["local_search_metaheuristic"],
+            )
+            calls += 1
+            runtime_total += res.runtime_seconds
+            solver_called = True
+        rows.append({"event_id": ev.event_id, "trigger": trig,
+                     "solver_called": solver_called})
+    log = pd.DataFrame(rows)
+    return ScenarioOutput("periodic", instance.instance_id, 0, calls, res, log, runtime_total)

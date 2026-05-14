@@ -28,6 +28,14 @@ class AETConfig:
     # > 1.0 to disable a guard.
     safety_urgency: float = 0.85
     safety_slack: float = 0.95
+    # Confidence-aware gating. The RAG extractor emits a confidence c_t in
+    # [0, 1] for every parsed event; we use it as a multiplicative weight on
+    # the Disruption Score so that low-confidence extractions are discounted
+    # before being compared with theta_t, and as an admission gate for the
+    # single-component safety override (a hallucinated "police-closed-lanes"
+    # message with c_t = 0.2 should not force a re-optimization on its own).
+    confidence_min_safety: float = 0.60
+    confidence_scaling: bool = True
 
 
 @dataclass
@@ -50,6 +58,7 @@ class TriggerLog:
     R: float
     D: float
     theta: float
+    confidence: float
     trigger: bool
     reason: str
     elapsed_since_last: float
@@ -112,24 +121,32 @@ class AETController:
         U = self.urgency(z.delay_probability, z.severity_minutes)
         S = self.spatial(event_position, state)
         R = self.slack_risk(tuple(z.affected_id), z.severity_minutes, state)
-        D = (
+        D_raw = (
             self.cfg.w_urgency * U
             + self.cfg.w_spatial * S
             + self.cfg.w_slack * R
         )
+        c = float(getattr(z, "confidence", 1.0))
+        # Confidence-scaled disruption score: low-confidence extractions are
+        # discounted before being compared against theta_t.
+        D = c * D_raw if self.cfg.confidence_scaling else D_raw
         theta = self.threshold(z.timestamp)
         trig = D >= theta
         reason = "D>=theta" if trig else "D<theta"
-        if not trig and U >= self.cfg.safety_urgency:
-            trig = True
-            reason = "safety_U"
-        if not trig and R >= self.cfg.safety_slack:
-            trig = True
-            reason = "safety_R"
+        # Single-component safety override, admitted only if the extractor is
+        # sufficiently confident about the parsed event.
+        if not trig and c >= self.cfg.confidence_min_safety:
+            if U >= self.cfg.safety_urgency:
+                trig = True
+                reason = "safety_U"
+            elif R >= self.cfg.safety_slack:
+                trig = True
+                reason = "safety_R"
         log = TriggerLog(
             event_id=z.event_id,
             timestamp=z.timestamp,
             U=U, S=S, R=R, D=D, theta=theta,
+            confidence=c,
             trigger=trig,
             reason=reason,
             elapsed_since_last=z.timestamp - self.t_last,

@@ -17,7 +17,13 @@ import yaml
 from tqdm import tqdm
 
 from . import event_generator, metrics
-from .baselines import run_aet_rag, run_continuous, run_static
+from .baselines import (
+    run_aet_rag,
+    run_continuous,
+    run_keyword,
+    run_periodic,
+    run_static,
+)
 from .data_loader import load_instances
 from .rag_extractor import build_extractor
 
@@ -79,6 +85,10 @@ def run(config_path: str, scenarios: List[str], smoke: bool,
             # Bound solver calls under smoke
             ev_for_continuous = events[:10] if smoke else events
             outs.append(run_continuous(inst, ev_for_continuous, extractor, cfg))
+        if "periodic" in scenarios:
+            outs.append(run_periodic(inst, events, cfg))
+        if "keyword" in scenarios:
+            outs.append(run_keyword(inst, events, cfg))
         if "aet_rag" in scenarios:
             outs.append(run_aet_rag(inst, events, extractor, cfg, seed=seed))
 
@@ -126,7 +136,7 @@ def main() -> None:
                              "the existing metrics CSVs.")
     args = parser.parse_args()
     if args.scenario == "all":
-        scenarios = ["static", "continuous", "aet_rag"]
+        scenarios = ["static", "continuous", "periodic", "keyword", "aet_rag"]
     else:
         scenarios = [s.strip() for s in args.scenario.split(",") if s.strip()]
     ds_filter = [s.strip() for s in args.dataset.split(",") if s.strip()] or None
