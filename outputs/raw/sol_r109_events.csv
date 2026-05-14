@@ -1,0 +1,101 @@
+event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
+sol_r109_e0000,1.2341732825648766,edge,"(40, 75)",2.69964604868901,0.40445662409345196,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0001,2.4966577233334952,edge,"(88, 30)",1.5770806245736018,0.27912100644825666,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0002,4.616172102638382,edge,"(1, 86)",2.282097693721431,0.5075417048323273,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0003,7.047221962542887,edge,"(50, 55)",0.7993188212289631,0.5655531866935367,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0004,13.293691971173669,edge,"(47, 42)",1.9804240943555644,0.4101570257331797,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0005,13.878631833508324,edge,"(5, 72)",1.7782484586208875,0.2118746920853947,mild,"slow traffic at the junction, about 2 minutes late"
+sol_r109_e0006,15.651198936552339,edge,"(1, 86)",47.404401438482175,0.8323109132361526,severe,"huge protest on Main Street, traffic at a standstill for 47 minutes"
+sol_r109_e0007,16.216343243223246,edge,"(42, 24)",2.923235593525014,0.629798414506175,mild,"slow traffic at the junction, about 3 minutes late"
+sol_r109_e0008,17.602888087006164,edge,"(54, 41)",2.6694821330897334,0.6246694063656131,mild,"slow traffic at the junction, about 3 minutes late"
+sol_r109_e0009,19.369858770246477,edge,"(42, 96)",1.363677877085646,0.2510903091179287,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0010,22.39241435631341,edge,"(48, 98)",1.8857133203697354,0.47845571971143663,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0011,25.637117252937756,edge,"(1, 7)",3.1904045655950837,0.7017093949625437,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0012,26.63040211445057,edge,"(15, 34)",104.88302273117401,1.0,severe,"fire trucks blocking the whole intersection, no way through"
+sol_r109_e0013,27.575465200084732,edge,"(5, 94)",2.2266216657220887,0.8758593551966609,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0014,28.850331604344113,edge,"(73, 8)",3.010128892974358,0.4981838826480046,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0015,28.96734456967585,edge,"(77, 46)",0.9673687041979349,0.8570270464291724,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0016,33.21306162176813,edge,"(7, 16)",2.079877728235002,0.28602058487663606,mild,"slow traffic at the junction, about 2 minutes late"
+sol_r109_e0017,34.09502010463253,edge,"(46, 36)",3.009516048222146,0.9735794021028522,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0018,36.579414627639366,edge,"(34, 63)",2.316845586128983,0.43804231060808296,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0019,37.41815320948887,edge,"(45, 14)",2.099371093717784,0.3610095760842604,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0020,38.60746238454963,edge,"(76, 57)",3.1203724258124668,0.550191777555222,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0021,39.25664696594443,edge,"(61, 28)",0.8844899887390493,0.43790936484204046,mild,"slow traffic at the junction, about 1 minutes late"
+sol_r109_e0022,49.13639845398269,edge,"(92, 53)",1.5355374049945227,0.8697848247582528,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0023,49.288997738605154,edge,"(56, 21)",2.1865536485861536,0.9347685787188402,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0024,49.508073079683605,edge,"(47, 30)",2.640827086372184,0.20093632222192084,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0025,57.6678956890318,edge,"(55, 38)",2.4179600023001515,0.6408079402545178,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0026,58.98583056918564,edge,"(51, 53)",2.8182889895147056,0.5066682788037499,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0027,60.113859232183266,edge,"(73, 85)",92.8695227828196,1.0,severe,"huge protest on Main Street, traffic at a standstill for 93 minutes"
+sol_r109_e0028,62.749629637163345,edge,"(83, 61)",1.5725743911956804,0.39890433518474766,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0029,63.64934471352317,edge,"(45, 61)",0.7529501218845229,0.29552858980719854,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0030,66.31656720194158,edge,"(6, 20)",1.968015809046185,0.38577815091725703,mild,"slow traffic at the junction, about 2 minutes late"
+sol_r109_e0031,70.46437618605027,edge,"(55, 10)",1.3180394469976369,0.5220401083381166,mild,"slow traffic at the junction, about 1 minutes late"
+sol_r109_e0032,71.70529131982777,edge,"(51, 31)",2.61150302103626,0.9333762340834293,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0033,75.90393670092583,edge,"(1, 8)",3.201832503775176,0.663536544680177,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0034,76.41835120995806,edge,"(42, 13)",0.5699923963734672,0.4199947399492155,mild,"slow traffic at the junction, about 1 minutes late"
+sol_r109_e0035,80.50035789647916,edge,"(1, 13)",2.1097993454445367,0.26309282566538184,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0036,80.65048156313068,edge,"(47, 90)",2.5289329682313437,0.7658763098015849,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0037,82.62412244162716,edge,"(33, 91)",47.2633814201278,0.8388676144910561,severe,"road completely blocked by a landslide, rerouting required"
+sol_r109_e0038,84.41265162129994,edge,"(99, 54)",0.8907120028772566,0.8528019859625927,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0039,85.13980662921904,edge,"(24, 95)",1.6341991913193055,0.6584099175793193,mild,"slow traffic at the junction, about 2 minutes late"
+sol_r109_e0040,87.83463060462215,edge,"(5, 97)",3.044556623916912,0.33636742045243484,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0041,92.41822769767307,edge,"(88, 18)",1.298745979978808,0.4446377876100445,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0042,96.66888403505139,edge,"(13, 88)",2.1201458314087147,0.36509584987404786,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0043,97.70397272774474,edge,"(74, 27)",3.329526942217608,0.7699961519221935,mild,"slow traffic at the junction, about 3 minutes late"
+sol_r109_e0044,98.24696941653494,edge,"(40, 56)",1.4425811088955238,0.46600772199766655,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0045,98.72789583123148,edge,"(22, 60)",1.984570853332246,0.7090597062735218,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0046,101.33338476633784,edge,"(39, 45)",2.5188639577227674,0.803317822519407,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0047,101.91265809260473,edge,"(12, 49)",2.302566167669588,0.7546000066593231,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0048,103.8183007234886,edge,"(91, 45)",2.821582895303313,0.8860403340675501,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0049,104.58751673693928,edge,"(18, 22)",1.9681606510755296,0.5741606373592266,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0050,107.24172160845524,edge,"(34, 51)",3.0986678441637245,0.38316188859457734,mild,"slow traffic at the junction, about 3 minutes late"
+sol_r109_e0051,107.42082467193991,edge,"(100, 38)",2.316804171635691,0.19960575037537026,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0052,108.08519075750108,edge,"(93, 46)",2.3578425145576927,0.5902410316085096,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0053,108.58352947006159,edge,"(92, 98)",2.7013909571305343,0.2514981605327713,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0054,116.8822288103813,edge,"(23, 48)",2.0457462663042056,0.22802397415839873,mild,"slow traffic at the junction, about 2 minutes late"
+sol_r109_e0055,119.02955781149488,edge,"(100, 66)",2.752218722650185,0.30497303559971956,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0056,121.28079059072904,edge,"(75, 59)",2.3736270391949805,0.38682602953535916,mild,"slow traffic at the junction, about 2 minutes late"
+sol_r109_e0057,121.77729782230118,edge,"(84, 54)",2.753869264783913,0.8866931605977074,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0058,122.71559822103735,edge,"(14, 80)",1.7072111157403589,0.2417482002565805,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0059,124.24477658108641,edge,"(23, 95)",3.006585767090659,0.6670497666476598,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0060,124.62224787948061,edge,"(90, 3)",2.7512043249227593,0.32627512502878747,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0061,127.7272262744557,edge,"(90, 29)",2.294029736150015,0.7520449864482072,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0062,130.31864589130743,edge,"(25, 52)",3.0547352488647905,0.6667060924746044,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0063,131.54420023705265,edge,"(45, 62)",1.3992544280888208,0.641564137585987,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0064,132.17797763989623,edge,"(51, 23)",3.4091466786490634,0.3208911338437323,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0065,135.954321473471,edge,"(38, 39)",3.0576871286476726,0.33296480577187204,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0066,135.98165900735967,edge,"(7, 22)",3.008368999568009,0.5304162664420782,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0067,136.681308258087,edge,"(77, 28)",42.78927081984466,0.724106912666763,severe,"major accident, police closed all lanes"
+sol_r109_e0068,139.2871822392034,edge,"(94, 49)",53.34241368300003,0.6474176003792205,severe,"road completely blocked by a landslide, rerouting required"
+sol_r109_e0069,142.08478302951977,edge,"(18, 50)",113.1882620583478,1.0,severe,"fire trucks blocking the whole intersection, no way through"
+sol_r109_e0070,144.15121719637696,edge,"(71, 43)",2.0565143830333765,0.8404204490017904,mild,"slow traffic at the junction, about 2 minutes late"
+sol_r109_e0071,144.48249119459246,edge,"(93, 83)",1.9164454558149888,0.4228436705640074,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0072,148.66187254655205,edge,"(53, 65)",33.82990405982884,1.0,severe,"major accident, police closed all lanes"
+sol_r109_e0073,151.43470499156732,edge,"(45, 93)",1.720236685645422,0.37573684117181194,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0074,154.6167366135548,edge,"(26, 100)",48.44598319855016,0.7922259148653641,severe,"road completely blocked by a landslide, rerouting required"
+sol_r109_e0075,158.2128940959242,edge,"(32, 100)",1.163477710067581,0.7097207517321504,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0076,160.4147211955723,edge,"(92, 95)",2.9116749754329128,0.5375929324260668,mild,"slow traffic at the junction, about 3 minutes late"
+sol_r109_e0077,161.78135697597065,edge,"(6, 47)",1.4275628438621328,0.572886644907066,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0078,163.2663511507903,edge,"(84, 89)",2.1556988228165377,0.9096845160243436,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0079,174.10873812688288,edge,"(94, 30)",1.3137331145785858,0.6683982251505444,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0080,175.35998821510586,edge,"(63, 66)",1.1035050229904229,0.3901087089885102,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0081,188.88142728019187,edge,"(41, 34)",2.6497963257652217,0.47174023611624316,mild,"slow traffic at the junction, about 3 minutes late"
+sol_r109_e0082,189.15550635148836,edge,"(20, 18)",1.4179397149685327,0.5457459652544661,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0083,189.90090159400077,edge,"(72, 37)",2.8585427339015896,0.7814606196900807,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0084,191.297006740777,edge,"(32, 75)",2.283072721413757,0.9205239112610456,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0085,192.69683265918496,edge,"(32, 73)",2.7140930402209382,0.7157560741839697,mild,"slow traffic at the junction, about 3 minutes late"
+sol_r109_e0086,193.52996984931022,edge,"(71, 76)",2.472720519266824,0.7321337523766085,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0087,193.86742230430863,edge,"(10, 33)",1.016345046043343,0.8846598071130317,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0088,195.8853943282733,edge,"(9, 16)",2.7643959067913464,0.635261425719473,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0089,200.02413025701222,edge,"(33, 45)",2.4906742307348577,0.811608622053691,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0090,201.16932795796203,edge,"(35, 45)",2.5165738038111845,0.7209032703908097,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0091,202.99074437203106,edge,"(99, 82)",2.716803767396213,0.3284471949409068,mild,"slight delay at the crosswalk, nothing serious"
+sol_r109_e0092,204.6641659537589,edge,"(43, 27)",84.62544745976066,1.0,severe,"road completely blocked by a landslide, rerouting required"
+sol_r109_e0093,205.73474621170064,edge,"(27, 7)",77.02513570734328,0.988996608331385,severe,"fire trucks blocking the whole intersection, no way through"
+sol_r109_e0094,206.00075690706922,edge,"(72, 61)",1.9640672828094796,0.7159960367312754,mild,stuck behind a garbage truck for a minute or two
+sol_r109_e0095,213.15652208663957,edge,"(67, 64)",1.456975122347137,0.7024250719512011,mild,"slow traffic at the junction, about 1 minutes late"
+sol_r109_e0096,220.5478665209744,edge,"(62, 3)",2.298909095479568,0.7980695855437593,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0097,220.8310367319788,edge,"(86, 100)",2.1585390404745453,0.5485032680305467,mild,"minor congestion, moving slowly but flowing"
+sol_r109_e0098,221.73417881200143,edge,"(85, 45)",2.834571814995772,0.4646958635868076,mild,"slow traffic at the junction, about 3 minutes late"
+sol_r109_e0099,227.0551011012644,edge,"(92, 65)",3.0573412620554867,0.8683021769835506,mild,"slight delay at the crosswalk, nothing serious"
