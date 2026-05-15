@@ -1,6 +1,51 @@
 event_id,timestamp,affected_type,affected_id,true_delay,true_probability,severity_class,message
-syn_n100_000_e0000,46.36092989230802,edge,"(76, 41)",1.8075716139714262,0.14446613971895783,mild,"slight delay at the crosswalk, nothing serious"
-syn_n100_000_e0001,132.81729734868708,edge,"(45, 78)",8.091007357473151,0.22550624976878975,medium,double-parked van blocking half the lane
-syn_n100_000_e0002,156.50797168287264,edge,"(27, 93)",1.10292351586567,0.4343130027325207,mild,stuck behind a garbage truck for a minute or two
-syn_n100_000_e0003,198.09207755919823,edge,"(51, 99)",6.263765299445962,0.3552149912977994,medium,"construction work narrowing the lanes, slow but moving"
-syn_n100_000_e0004,439.39270028742294,edge,"(94, 84)",6.998942012097653,0.530907298549711,medium,"school zone congestion, queues forming"
+syn_n100_000_e0000,19.084866629558785,edge,"(89, 61)",10.90576322309464,0.9676829948760964,medium,"school zone congestion, queues forming"
+syn_n100_000_e0001,21.784619732592283,edge,"(37, 19)",3.769420952310162,0.41561244148095955,mild,"minor congestion, moving slowly but flowing"
+syn_n100_000_e0002,26.583601836909878,edge,"(90, 26)",17.230420363894893,0.77974739633426,medium,"construction work narrowing the lanes, slow but moving"
+syn_n100_000_e0003,31.083537202353035,edge,"(88, 93)",2.0582008695659066,0.5475369669448734,mild,stuck behind a garbage truck for a minute or two
+syn_n100_000_e0004,40.1382133981404,edge,"(69, 61)",2.4431636198811004,0.5481777580607267,mild,"slight delay at the crosswalk, nothing serious"
+syn_n100_000_e0005,42.503656903962664,edge,"(87, 81)",11.948153309326083,0.5839107431573413,medium,"heavier than usual traffic on this stretch, expect ~12 min delay"
+syn_n100_000_e0006,46.36092989230802,edge,"(76, 41)",1.8075716139714262,0.14446613971895783,mild,"minor congestion, moving slowly but flowing"
+syn_n100_000_e0007,50.59041655000154,edge,"(45, 53)",20.256014687118107,0.616484497195671,severe,"major accident, police closed all lanes"
+syn_n100_000_e0008,62.37593763195407,edge,"(95, 36)",2.9482369624269658,0.6489641313970925,mild,"slow traffic at the junction, about 3 minutes late"
+syn_n100_000_e0009,70.29032012375006,edge,"(15, 89)",2.5992010263591836,0.4241264768232551,mild,"minor congestion, moving slowly but flowing"
+syn_n100_000_e0010,81.70131403664577,edge,"(52, 26)",16.802708137166327,0.5498739837502071,medium,"school zone congestion, queues forming"
+syn_n100_000_e0011,88.2698546933224,edge,"(77, 36)",6.284784731616517,0.6126365199973167,medium,double-parked van blocking half the lane
+syn_n100_000_e0012,105.24087275885844,edge,"(84, 19)",3.0069649105979734,0.15556636689278638,mild,"slight delay at the crosswalk, nothing serious"
+syn_n100_000_e0013,107.13243205458129,edge,"(64, 65)",6.317957915734641,0.5650306121787285,medium,double-parked van blocking half the lane
+syn_n100_000_e0014,132.81729734868708,edge,"(45, 78)",8.091007357473151,0.22550624976878975,medium,"school zone congestion, queues forming"
+syn_n100_000_e0015,148.48970640625774,edge,"(69, 98)",3.291483059954009,0.558857972844871,mild,"minor congestion, moving slowly but flowing"
+syn_n100_000_e0016,156.50797168287264,edge,"(27, 93)",1.10292351586567,0.4343130027325207,mild,"slow traffic at the junction, about 1 minutes late"
+syn_n100_000_e0017,159.6236650868751,edge,"(2, 18)",1.5013549165934137,0.327501098584446,mild,"slight delay at the crosswalk, nothing serious"
+syn_n100_000_e0018,162.11426434478756,edge,"(85, 32)",5.485602695663596,0.6265088191314345,medium,"construction work narrowing the lanes, slow but moving"
+syn_n100_000_e0019,168.75388330750275,edge,"(30, 77)",30.052764757207076,0.7136423895532369,severe,"huge protest on Main Street, traffic at a standstill for 30 minutes"
+syn_n100_000_e0020,196.24758706386677,edge,"(95, 89)",4.0992986051606435,0.7846472001451827,mild,stuck behind a garbage truck for a minute or two
+syn_n100_000_e0021,197.5377396699622,edge,"(13, 67)",0.42180956247182133,0.7217559206369947,mild,"slow traffic at the junction, about 0 minutes late"
+syn_n100_000_e0022,198.09207755919823,edge,"(51, 99)",6.263765299445962,0.3552149912977994,medium,"school zone congestion, queues forming"
+syn_n100_000_e0023,204.79997095731375,edge,"(80, 86)",10.86114259558549,1.0,medium,"school zone congestion, queues forming"
+syn_n100_000_e0024,213.39741536735437,edge,"(57, 13)",0.8765201516988017,0.44130843990573704,mild,"minor congestion, moving slowly but flowing"
+syn_n100_000_e0025,217.78871709986927,edge,"(13, 63)",0.8047438478465831,0.7641881364360296,mild,stuck behind a garbage truck for a minute or two
+syn_n100_000_e0026,225.33544958207077,edge,"(74, 0)",0.9884258856034658,0.42267261250884713,mild,"slight delay at the crosswalk, nothing serious"
+syn_n100_000_e0027,229.50111891039288,edge,"(77, 41)",2.5544035788967174,0.4659071194330499,mild,"minor congestion, moving slowly but flowing"
+syn_n100_000_e0028,230.2841250378423,edge,"(38, 28)",6.603454276086672,0.5626899786906931,medium,"construction work narrowing the lanes, slow but moving"
+syn_n100_000_e0029,233.649574769855,edge,"(96, 21)",2.554507415457833,0.693157549443413,mild,stuck behind a garbage truck for a minute or two
+syn_n100_000_e0030,256.7550607666985,edge,"(86, 38)",7.205831973417289,0.6658695015809669,medium,"heavier than usual traffic on this stretch, expect ~7 min delay"
+syn_n100_000_e0031,262.95905014579597,edge,"(5, 79)",10.200989971839054,0.3813475745207604,medium,"heavier than usual traffic on this stretch, expect ~10 min delay"
+syn_n100_000_e0032,283.99374668279245,edge,"(86, 75)",11.592492725453287,0.7723229747238098,medium,double-parked van blocking half the lane
+syn_n100_000_e0033,288.2783112040194,edge,"(67, 92)",2.1175361530401404,0.320972751847808,mild,"slight delay at the crosswalk, nothing serious"
+syn_n100_000_e0034,294.8210640794825,edge,"(46, 89)",0.7458042468006789,0.327027833516245,mild,"slow traffic at the junction, about 1 minutes late"
+syn_n100_000_e0035,302.3538067695709,edge,"(92, 36)",2.5200749654414083,0.538699929564554,mild,"slight delay at the crosswalk, nothing serious"
+syn_n100_000_e0036,336.98805986250727,edge,"(71, 53)",12.066983311079987,1.0,medium,"school zone congestion, queues forming"
+syn_n100_000_e0037,341.1672494476714,edge,"(66, 31)",5.0238069058553885,0.5636761052811782,medium,"construction work narrowing the lanes, slow but moving"
+syn_n100_000_e0038,349.23531494544136,edge,"(46, 79)",0.6525373848092989,0.4201943972645501,mild,"minor congestion, moving slowly but flowing"
+syn_n100_000_e0039,349.8319453271616,edge,"(60, 55)",12.771356608596598,0.9349774097903529,medium,"heavier than usual traffic on this stretch, expect ~13 min delay"
+syn_n100_000_e0040,361.76967011538613,edge,"(79, 47)",4.135469960656691,0.6786159634361906,mild,"slight delay at the crosswalk, nothing serious"
+syn_n100_000_e0041,379.2039430161982,edge,"(81, 23)",1.5269366024299185,0.7269103224909739,mild,"minor congestion, moving slowly but flowing"
+syn_n100_000_e0042,380.91740001495197,edge,"(44, 2)",5.9089872063839195,0.3787440090701713,medium,"construction work narrowing the lanes, slow but moving"
+syn_n100_000_e0043,407.73188673662446,edge,"(100, 79)",3.449717998897763,0.7148543742260708,mild,"slow traffic at the junction, about 3 minutes late"
+syn_n100_000_e0044,433.02677861729194,edge,"(99, 78)",1.6530822117233224,0.6627784854659904,mild,"slight delay at the crosswalk, nothing serious"
+syn_n100_000_e0045,437.7400409124387,edge,"(29, 92)",8.624027114183495,0.9109268858783924,medium,"construction work narrowing the lanes, slow but moving"
+syn_n100_000_e0046,439.39270028742294,edge,"(94, 84)",6.998942012097653,0.530907298549711,medium,"school zone congestion, queues forming"
+syn_n100_000_e0047,468.39947507969634,edge,"(22, 54)",4.487944373920731,0.4109526960152814,mild,"minor congestion, moving slowly but flowing"
+syn_n100_000_e0048,475.179379733781,edge,"(89, 81)",14.005899568155725,0.9041628239656292,medium,"school zone congestion, queues forming"
+syn_n100_000_e0049,479.67190143858915,edge,"(45, 39)",4.88297539413636,0.6727323236952706,mild,"slight delay at the crosswalk, nothing serious"
